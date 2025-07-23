@@ -2,22 +2,6 @@ import React, { memo } from 'react';
 import type { LottieFile } from '../types';
 import { DownloadIcon, TrashIcon, AlertTriangleIcon, CheckCircleIcon, XCircleIcon, RefreshCwIcon, LoaderIcon } from './icons';
 
-// Since the lottie-player is loaded via CDN, we need to declare its type for TypeScript JSX.
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'lottie-player': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement> & {
-        src: string;
-        background: string;
-        speed: string;
-        style: React.CSSProperties;
-        loop: boolean;
-        autoplay: boolean;
-      }, HTMLElement>;
-    }
-  }
-}
-
 interface FileCardProps {
   file: LottieFile;
   onRemove: () => void;
