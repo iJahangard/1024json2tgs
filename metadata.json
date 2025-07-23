@@ -1,0 +1,6 @@
+{
+  "name": "Lottie to TGS Converter",
+  "description": "An application to convert Lottie animation files (.json) into animated stickers for Telegram (.tgs) with automatic resizing and optimization.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
