@@ -8,6 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.3/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js"></script>
+    <!-- Add Babel for in-browser JSX/TSX transpilation -->
+    <script src="https://unpkg.com/@babel/standalone@7.24.8/babel.min.js"></script>
   <script type="importmap">
 {
   "imports": {
@@ -22,7 +24,8 @@
 </head>
   <body class="bg-slate-900">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- Changed script type to "text/babel" to enable Babel transpilation for TSX files -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>

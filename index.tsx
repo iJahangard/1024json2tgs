@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import './types'; // Ensures global type declarations are loaded for custom elements.
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
